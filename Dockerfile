@@ -12,7 +12,7 @@ RUN mkdir -p /usr/share/maven \
 
 RUN mkdir -p /usr/share/cf-cli \
   && curl -fsSL https://s3.amazonaws.com/go-cli/releases/v6.17.0/cf-cli_6.17.0_linux_x86-64.tgz \
-    | tar -xzC /usr/share/cf-cli
+    | tar -xzC /usr/share/cf-cli \
   && ln -s /usr/share/cf-cli/cf /usr/bin/cf
 
 
